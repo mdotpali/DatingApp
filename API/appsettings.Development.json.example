@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Information"
+    }
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Database=datingdb;User Id=SA;Password=YOUR_DB_PASSWORD;TrustServerCertificate=true"
+  },
+  "TokenKey": "REPLACE_WITH_A_LONG_RANDOM_SECRET_AT_LEAST_64_CHARS_LONG"
+}

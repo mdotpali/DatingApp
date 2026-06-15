@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkcert -check)",
+      "Bash(security find-certificate:*)",
+      "Bash(mkcert -CAROOT)",
+      "Bash(curl -k -v https://localhost:4200)",
+      "Bash(curl -sk https://localhost:4200 -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -sk --max-time 5 https://localhost:4200 -o /dev/null -w \"%{http_code}\\\\n%{ssl_verify_result}\")",
+      "Bash(echo \"exit: $?\")"
+    ]
+  }
+}
